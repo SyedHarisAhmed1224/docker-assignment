@@ -1,0 +1,27 @@
+{
+  "name": "docker-lab-manual-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyedHarisAhmed1224/docker-lab-manual-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SyedHarisAhmed1224/docker-lab-manual-backend/issues"
+  },
+  "homepage": "https://github.com/SyedHarisAhmed1224/docker-lab-manual-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "socket.io": "^4.8.1"
+  }
+}
