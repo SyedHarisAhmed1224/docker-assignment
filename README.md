@@ -10,11 +10,13 @@ A MySQL database running in a Docker container with a volume to persist chat dat
 
 All components run in isolated containers connected through a custom Docker network, showcasing modular and scalable architecture.
 
+
 Service	Technology
-Frontend: React.js
-Backend: Node.js (Express)
-Database: MySQL
-Docker: Networking, Volumes, Deploying
+- Frontend: React.js
+- Backend: Node.js (Express)
+- Database: MySQL
+- Docker: Networking, Volumes, Deploying
+
 
 Docker Commands
 - Network:
@@ -35,6 +37,7 @@ Docker Commands
 1. docker build -t docker-lab-frontend ./frontend
 2. docker run -d --name frontend-container --network chat-network -p 3000:80 docker-lab-frontend
 
+
 Docker Logs
 
 - Database
@@ -43,7 +46,24 @@ Docker Logs
 
 - Backend
 
+![Backend Logs](image-1.png)
 
+- Frontend
+
+![Frontend Logs](image-2.png)
 
 
 DockerHub repository with pushed images link -> https://hub.docker.com/repositories/syedharisahmed
+
+
+Creative Enhancements:
+
+This project goes beyond basic Dockerization by:
+
+1. Avoiding Docker Compose intentionally, showcasing manual container orchestration with a user-defined network.
+
+2. Using multi-stage Docker builds to minimize image size for the frontend.
+
+3. Applying Docker volumes for persistent MySQL data even after container restarts.
+
+4. Structuring the microservices in a production-friendly way, making future CI/CD integration and container orchestration (e.g., Kubernetes) easier.
